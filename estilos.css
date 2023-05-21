@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #2c2c31;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #9e9ea0;
+  }
+  @keyframes entrada {
+    from {opacity: 0.2;
+    transform: translateY(-200px)}
+    to {opacity: 1;
+    transform: translateY(0)}
+  }
+  body {
+    background-color: #121215;
+    color: #eaeaea;
+    font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-areas: "perfil linhadotempo";
+    grid-template-columns: 1 fr 1fr;
+    grid-template-rows: 100vh;
+  }
+  aside {
+    grid-area: perfil;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-image: url("./background.svg");
+    background-size: contain;
+    border-right: 1px solid;
+    border-image: linear-gradient(rgb(39, 209, 39), rgb(115, 172, 219), rgb(252, 103, 4)) 1;
+  }
+  aside * {
+    animation: entrada 2s ease-in-out;
+  }
+  #loguinho {
+    width: 30vw;
+    height: auto;
+  }
+  #selfie {
+    width: 15vw;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    background: linear-gradient(rgb(39, 209, 39), rgb(115, 172, 219), rgb(252, 103, 4)) padding-box,
+    linear-gradient(260deg, rgb(39, 209, 39), rgb(115, 172, 219), rgb(252, 103, 4)) border-box;
+  }
+  aside p {
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+  aside span {
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    color: #9e9ea0;
+  }
+  nav {
+    padding: 64px;
+    grid-area: linhadotempo;
+    overflow-y: scroll;
+    animation: entrada 2s ease-in-out;
+  }
+  .memory {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;  
+    text-decoration: none;
+    margin-bottom: 50px;
+  }
+  .memory small {
+    color: #bebebf;
+    font-size: 12px;
+  }
+  .memory h1 {
+    font-size: 32px;
+    color: #eaeaea;
+  }
+  .memory img {
+    width: auto;
+    height: 280px;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .memory div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .memory:hover img {
+    transform: scale(1.1);
+  }
+  .memory p {
+    font-size: 18px;
+    color: #bebebf;
+    line-height: 28px;
+  } 
+  @media (max-width: 768px) {
+    body {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.2fr 0.8fr;
+      grid-template-areas: "perfil" 
+      "linhadotempo";
+    }   
+    aside {
+      border-right: none;
+      padding: 32px 12px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }  
+    aside p {
+      font-size: 18px;}
+    nav {
+      overflow-y: visible;
+      padding: 22px;
+    }
+    #loguinho {
+      width: 55vw;
+      height: auto;
+    }
+    #selfie {
+      width: 55vw;
+      height: auto;}
+    .memory h1 {
+      font-size: 18px;
+    }
+    .memory p {
+      font-size: 13px;
+    }
+  }

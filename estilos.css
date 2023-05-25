@@ -6,11 +6,15 @@
   ::-webkit-scrollbar {
     width: 8px;
   }
+  ::-webkit-scrollbar-track:hover {
+    background:rgb(39, 209, 39)
+  }
   ::-webkit-scrollbar-track {
     background: #2c2c31;
   }
   ::-webkit-scrollbar-thumb {
     background: #9e9ea0;
+    border-radius: 3px;
   }
   @keyframes entrada {
     from {opacity: 0.2;

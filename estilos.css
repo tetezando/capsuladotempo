@@ -10,11 +10,11 @@
     background:rgb(39, 209, 39)
   }
   ::-webkit-scrollbar-track {
-    background: #2c2c31;
+    background: rgb(115, 172, 219);
   }
   ::-webkit-scrollbar-thumb {
-    background: #9e9ea0;
-    border-radius: 3px;
+    background: rgb(252, 103, 4);
+    border-radius: 7px;
   }
   @keyframes entrada {
     from {opacity: 0.2;
@@ -68,6 +68,32 @@
     font-family: "Roboto", sans-serif;
     color: #9e9ea0;
   }
+  header {
+    background: transparent;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+li {
+  list-style: none;
+  color: lavenderblush;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 19px;
+  transition: .5s;
+  font-family: "Roboto", sans-serif;;
+}
+li:hover {
+  color: rgb(39, 209, 39);
+}
   nav {
     padding: 64px;
     grid-area: linhadotempo;
@@ -107,6 +133,7 @@
   }
   .memory:hover img {
     transform: scale(1.1);
+    border-radius: 8px;
   }
   .memory p {
     font-size: 18px;

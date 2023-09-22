@@ -82,6 +82,9 @@ ul {
   width: 100%;
   justify-content: space-between;
 }
+a {
+  text-decoration: none;
+}
 li {
   list-style: none;
   color: lavenderblush;
@@ -94,11 +97,47 @@ li {
 li:hover {
   color: rgb(39, 209, 39);
 }
+.wrapper {
+  display: grid;
+  grid-template-columns: 100vw;
+  align-content: center;
+  justify-content: center;
+}
+.proj {  
+  text-decoration: none;
+  color: lavenderblush;
+  padding: 30px;
+  cursor: pointer;
+  font-size: 19px;
+  transition: .5s;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.proj:hover {
+  color: rgb(39, 209, 39)
+}
   nav {
     padding: 64px;
     grid-area: linhadotempo;
     overflow-y: scroll;
     animation: entrada 2s ease-in-out;
+  }
+  .socialmedia {
+    text-decoration: none;
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+    grid-area: linhadotempo;
+    margin-left: 4px;
+  }
+  i {
+    color: lavenderblush
+  }
+  i:hover {
+    color: rgb(39, 209, 39)
   }
   .memory {
     display: flex;

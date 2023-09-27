@@ -97,28 +97,6 @@ li {
 li:hover {
   color: rgb(39, 209, 39);
 }
-.wrapper {
-  display: grid;
-  grid-template-columns: 100vw;
-  align-content: center;
-  justify-content: center;
-}
-.proj {  
-  text-decoration: none;
-  color: lavenderblush;
-  padding: 30px;
-  cursor: pointer;
-  font-size: 19px;
-  transition: .5s;
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.proj:hover {
-  color: rgb(39, 209, 39)
-}
   nav {
     padding: 64px;
     grid-area: linhadotempo;
@@ -178,7 +156,7 @@ li:hover {
     font-size: 18px;
     color: #bebebf;
     line-height: 28px;
-  } 
+  }
   @media (max-width: 768px) {
     body {
       grid-template-columns: 1fr;

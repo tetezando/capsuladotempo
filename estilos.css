@@ -169,30 +169,81 @@ li:hover {
       grid-template-rows: 0.2fr 0.8fr;
       grid-template-areas: "perfil" 
       "linhadotempo";
+      width: 95vw;
     }   
     aside {
       border-right: none;
-      padding: 32px 12px;
+      padding: 12px 8px;
       background-repeat: no-repeat;
       background-size: cover;
+      width: 95vw;
     }  
     aside p {
-      font-size: 18px;}
+      font-size: 14px;}
+    aside span {
+      width: 80vw;
+    }
+    header {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
     nav {
-      overflow-y: visible;
-      padding: 22px;
+      padding: 5px;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      width: 50vw;
+      justify-content: space-around;
+    }
+    li {
+      font-size: 13px;
+    }
+    .socialmedia {
+      width: 80px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 4px;
     }
     #loguinho {
-      width: 55vw;
+      width: 25vw;
       height: auto;
     }
+    .quemsou {
+      font-size: 14px;
+    }
     #selfie {
-      width: 55vw;
+      width: 35vw;
       height: auto;}
+      .memory img {
+        width: 80vw;
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .memory div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        height: auto;
+        overflow: none;
+        border-radius: 8px;
+      }
+      .memory:hover img {
+        transform: scale(1.1);
+        border-radius: 8px;
+      }
     .memory h1 {
-      font-size: 18px;
+      font-size: 14px;
     }
     .memory p {
-      font-size: 13px;
+      font-size: 12px;
     }
   }

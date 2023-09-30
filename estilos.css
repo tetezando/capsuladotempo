@@ -169,14 +169,14 @@ li:hover {
       grid-template-rows: 0.2fr 0.8fr;
       grid-template-areas: "perfil" 
       "linhadotempo";
-      width: 95vw;
+      width: 100vw;
     }   
     aside {
       border-right: none;
       padding: 12px 8px;
       background-repeat: no-repeat;
       background-size: cover;
-      width: 95vw;
+      width: 100vw;
     }  
     aside p {
       font-size: 14px;}
